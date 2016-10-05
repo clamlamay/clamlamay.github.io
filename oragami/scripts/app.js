@@ -102,13 +102,19 @@ buttonNumberTwo.textContent = buttonTwo(1, 90);
 
 // Button hover - color change - works but not when i save the JS
 
-// function buttonHover(){
-// 	var thirdButton = $('#three');
+// // function buttonHover(){
+// 	var thirdButton = $('#one');
 // 	thirdButton.on('click', function(){
 // 	console.log('this button is working');
 // 	thirdButton.css('background-color', '#de89f0');
 // });
-// buttonHover();
+// // buttonHover();
+
+$('one').click( function(){
+  var buttonCount = $('#score');
+  buttonCount += 1;
+  console.log(score);
+});
 
 // 	var button = $('button');
 // 	button.hover(function(){

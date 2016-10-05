@@ -2,6 +2,7 @@ $body-color: #89f0de;
 $body-font: 'Open Sans', 'Arial', sans-serif;
 $header-font: 'Londrina Shadow', sans-serif;
 $button-color: #f0de89;
+$secondButton-Color: #de89f0;
 $font-color: #de89f0; 
 
 body {
@@ -24,6 +25,7 @@ button {
 	color: black;
 	background-color: $button-color;
 }
+
 
 h4 {
 	text-align: center;
