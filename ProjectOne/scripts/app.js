@@ -1,5 +1,7 @@
 console.log('loaded window')
 document.getElementById('FF7-theme').play();
+// document.getElementById('FF7-battle').play();
+
 
 var characters = [
 		'Cloud', 
