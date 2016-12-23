@@ -8,16 +8,21 @@ body {
 header {
   font-family: "Londrina Shadow", sans-serif;
   text-align: center;
-  font-size: 50px; }
+  font-size: 50px; 
+  }
 
 button {
   color: black;
-  background-color: #f0de89; }
+  background-color: #f0de89; 
+}
 
 h4 {
   text-align: center; }
 
 footer {
-  text-align: right; }
+  text-align: right;
+  margin-top: 100px;
+}
+
 
 /*# sourceMappingURL=main.css.map */

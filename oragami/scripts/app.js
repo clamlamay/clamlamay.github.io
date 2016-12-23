@@ -6,13 +6,30 @@ $(document).ready(function() {
 var timerElement = $('timer');
 var count = 31;
 var counter = setInterval(timer, 1000); 
+var score = 0;
+
+
+function getScore() {
+    $( "#score" ).text("Current score:  " + score);
+};
+getScore();
+
 
 function getName() {
     var username = prompt('What is your name?');
-    // var helloElement = $("#name");
     $( "#name" ).text( "Welcome, " + username + "!");
 };
 getName();
+
+// var gotName = false;
+// while(gotName == false){
+//   var userName = prompt("Yo passenger! What's your name?");
+
+//   if ( confirm("Are you sure your name is " + userName + "?")){
+//   alert("’Sup " + userName + "!");
+//   gotName = true;
+//   }
+// } 
 
 
 function timer(){
