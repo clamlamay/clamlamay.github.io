@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp" ng-cloak=''>
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Christopher Lamlamay</title>
+    
+      <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- FONT
+  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  	
+  	 <!-- Javascripts
+  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="/javascripts/angular.js"></script>
+    <script src="/javascripts/angular-route.js"></script>
+    <script src="/javascripts/app.js"></script>
+    <script src="/javascripts/app.homeCtrl.js"></script>
+ 
+      <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet"s href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/skeleton.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+     <!-- Favicon
+  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<link rel="icon" type="image/png" href="images/favicon.png">
+
+  </head>
+  
+
+  <body>
+    <div class="container">
+    	<div ng-view></div>
+    </div>
+
+    <div class="nav" id="sidebar">
+  		<ul>
+  			<li><a href="/about">About</a></li>
+  			<li><a href="/portfolio">Portfolio</a></li>
+  			<li><a href="/contact">Contact</a></li>  
+        <li><a href="/">Temp Home</a></li>    
+  		</ul>
+  	   <div id="sidebar-btn">
+  	     <span></span>
+  	   	 <span></span>
+  	   	 <span></span>
+  	   </div>
+     </div>  
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	   <script>
+	   	$(document).ready(function(){
+	   		$('#sidebar-btn').click(function(){
+	   			$('#sidebar').toggleClass('visible');
+	   		});
+	   	});
+	   </script>
+
+  </body>
+
+</html>
