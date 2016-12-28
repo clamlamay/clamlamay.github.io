@@ -12,7 +12,7 @@ angular.module('portfolioApp', ['ngRoute']).config([
 
     $routeProvider
       .when('/', {
-        templateUrl: 'ngViews/home.html',
+        templateUrl: 'ngViews/index.html',
         controller: 'homeCtrl'
       })
        .when('/about', {
