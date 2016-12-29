@@ -1,7 +1,47 @@
-<div class="u-full-width"> 
-	<div class="row">
-    	<div class="four columns">One</div>
-    	<div class="four columns">Two</div>
-    	<div class="four columns">Three</div>
+<!-- <div class="u-full-width"> 
+	<div class="row" id="portfolio">
+    	<img src="images/dog.jpg"><img src="images/dog.jpg"><img src="images/dog.jpg"><img src="images/dog.jpg"><img src="images/dog.jpg">
+    	
   	</div>
+</div> -->
+
+<div id="portfolio">
+	<ul class="tab">
+	  <!-- <li><a href="javascript:void(0)" class="tablinks" onclick="openBox(event, 'FF')">Final Fantasy VII</a></li> -->
+	  <!-- <li><a href="javascript:void(0)" class="tablinks" onclick="openBox(event, 'Oragami')">Oragami</a></li> -->
+	  <li><a href="javascript:void(0)" class="tablinks" onclick="openBox(event, 'Typeoke')">Typeoke</a></li>
+	</ul>
+
+	<!-- <div id="FF" class="tabcontent">
+	  <h5>Final Fantasy VII</h5>
+	  <p>London is the capital city of England.</p>
+	</div> -->
+
+	<!-- <div id="Oragami" class="tabcontent">
+	  <h5>Oragami</h5>
+	  <p></p> 
+	</div> -->
+
+	<div id="Typeoke" class="tabcontent">
+	  <h5>Typeoke</h5>
+	  <p>A lyric API with a twist. Add your lyrics to the database and play other user’s lyrics. Can you type all the words?</p>
+	  <p>View on Github</p>
+	</div>
 </div>
+
+<script>
+function openBox(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+ 
