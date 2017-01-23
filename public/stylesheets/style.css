@@ -100,19 +100,13 @@ ul li:hover {
 }
 
 #sidebar-btn span {
-	height: 2px;
-	background: #ccc;
-	margin-bottom: 5px;
-	display: block;
+    height: 2px;
+    background: #ccc;
+    margin-bottom: 5px;
+    display: block;
+    transition: all 0.5s ease-out;
 }
 
-#sidebar-btn span:nth-child(2) {
-	width: 75%;
-}
-
-#sidebar-btn span:nth-child(3) {
-	width: 50%;
-}
 
 #social {
     text-align: center;
