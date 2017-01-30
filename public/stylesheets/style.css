@@ -142,13 +142,6 @@ ul li:hover {
     height: 50%;
 }
 
-/* Prevents slides from flashing */
-#slides {
-  display:none;
-}
-
-
-
 ul.tab {
     list-style-type: none;
     margin: 0;
