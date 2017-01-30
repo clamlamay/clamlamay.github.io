@@ -6,9 +6,11 @@ body {
     height: 100% !important;
 	font-family: 'Josefin Sans', sans-serif;
 	background: black;
-	overflow: hidden;
+	// overflow: hidden;
 	cursor: crosshair;
 }
+
+
 
 @font-face {
     font-family: Josefin Sans;
@@ -119,7 +121,7 @@ ul li:hover {
 
 
 #copyright { 
-  	position: fixed;
+  	// position: absolute;
   	right: 0;
   	bottom: 0;
   	left: 0;
@@ -136,9 +138,15 @@ ul li:hover {
 }
 
 #portfolio img {
-    width: 250px;
-    height: 195px;
+    width: 75%;
+    height: 50%;
 }
+
+/* Prevents slides from flashing */
+#slides {
+  display:none;
+}
+
 
 
 ul.tab {
